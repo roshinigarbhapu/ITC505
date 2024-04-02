@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Holy Grail Layout with JavaScript</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <header class="center">
+        <h1>Revitalize Your Skin</h1>
+    </header>
+    <div class="content">
+        <div class="sidebar">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="main-content" id="main-content">
+            
+            <p>Skincare is not just about looking good; it's about feeling good and maintaining the health of
+                 your body's largest organ: your skin. Everyone's skin is unique, so it's essential to tailor 
+                 your skincare routine to your specific skin type and concerns.
+                </p>
+                <p>Taking care of your skin is an investment in your overall health and well-being. By following a consistent skincare routine and using suitable products for your skin type and concerns, you can achieve healthier, more radiant skin that looks and feels its best.
+
+                </p>
+            <div id="interface"></div>
+        </div>
+        <div class="advertisement">
+            <a href="https://www.amazon.com" target="_blank"><img 
+                src="https://d1flfk77wl2xk4.cloudfront.net/Assets/GalleryImage/96/037/L_g0072803796.jpg" 
+                alt="Advertisement" width="150px", height="auto"></a>
+        </div>
+        <script>
+            
+            var productImage = document.querySelector('img');
+          
+            
+            productImage.addEventListener('click', function() {
+              
+              window.location.href = 'https://www.amazon.com/COSRX-Repairing-Hydrating-Secretion-Phthalates/dp/B00PBX3L7K/?_encoding=UTF8&pd_rd_w=aQExL&content-id=amzn1.sym.64be5821-f651-4b0b-8dd3-4f9b884f10e5&pf_rd_p=64be5821-f651-4b0b-8dd3-4f9b884f10e5&pf_rd_r=Z1FW93RVDYXTHBS25JQY&pd_rd_wg=8iaGG&pd_rd_r=9f54bb8c-87c3-4821-a125-87ae176b6f4e&ref_=pd_gw_crs_zg_bs_3760911';
+            });
+          </script>
+    </div>
+    <footer>
+        <p>Addendum: The JavaScript code is tasked with displaying the current date and time in the main
+             content area of a webpage and showing the last modified date in the footer.</p>
+    <p>I got the current date and time by using JavaScript's Date object. To make this information more
+         user-friendly, I next used the toLocaleString() function to convert it into a localized string. 
+         The formatted date and time are then displayed in the inner HTML of an element that has the ID 
+         interface applied to it. I also got the document's last modified date and put it in the footer 
+         by using the document.lastModified attribute.</p>
+         <p>The absence of elements with the IDs interface and last-modified in the HTML markup could be
+             one such problem. The intended feature would not function correctly as a result, leading to
+              JavaScript problems. Making ensuring the HTML document contains these elements with the
+               proper IDs is essential to resolving this.</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+
+    <script src="j.js"></script>
+</div>
+<script type="text/javascript">
+     var x = document.lastModified;
+     document.getElementById('lastModified').textContent = x;
+</script>
+</body>
+</html>
