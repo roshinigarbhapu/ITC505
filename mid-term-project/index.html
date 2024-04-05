@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Adventure Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Deserted Town Game</h1>
+    </header>
+    <main>
+        <div id="story">
+            <!-- Story text will be inserted here -->
+        </div>
+        <div id="choices">
+            <!-- Choice buttons will be inserted here -->
+        </div>
+        <div id="image">
+            <!-- Image will be inserted here -->
+        </div>
+    </main>
+    <script src="j.js"></script>
+    <footer>
+        <p>This code has a straightforward JavaScript deserted town game with text controls. Every key
+        in the game represents a different stage of the tale, which is defined by the plot object.
+        The currentStage is set to the game's beginning point by the startGame() function, which 
+        also updates the user interface (UI) to show the choices, text, and image for the current
+        stage.</p>
+        <p>Every stage has text that explains the circumstances, options available to the player, the
+        results of those options, and a related image. When a decision is taken, the page is
+        updated and the currentStage is updated based on the decision's outcome.</p>
+        <p>More stages for the tale item could be added to the game to add more obstacles, interactions,
+        or storylines. Furthermore, features like character stats, inventory management, and 
+        branching narratives based on past choices could be included. The gaming experience might
+        be improved by adding puzzles or random events. Incorporating sound effects or music into 
+        the game could also help players get more fully immersed in the experience, which would 
+        raise their level of engagement.</p>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
