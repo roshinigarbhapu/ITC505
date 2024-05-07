@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">Lights Out</h1>
+        <div id="header">
+        <button id="newGameButton">New Game</button>
+            <!-- Game board squares will be dynamically generated here -->
+        </div>
+    </div>
+        <div id="movesTimerContainer">
+        <div id="movesCounter">Moves: <span id="movesCount">0</span></div>
+        <div id="timer">00:00:00</div>
+    </div>
+</div>
+    <div id="board">
+
+    </div>
+    <script src="script.js"></script>
+    <br><br><br>
+<h1>Addendum</h1>
+<p> The process is it's a grid-based puzzle game
+where the goal is to turn off all the lights by
+toggling them. Each toggle affects adjacent
+lights.</p>
+  <p>The creative choices of "Lights Out" game are
+visual design, user interface and grid layout.
+  </p>
+  <p>One challenge is designing an efficient
+algorithm to toggle lights and check for
+win conditions, especially as the grid
+size increases and ensuring the game
+working well.</p>
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
